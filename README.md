@@ -1,14 +1,13 @@
-# 'GO FUND ME' DApp (using Factory Design Pattern)
+# The Crystal Clear Coin Initiative (CCC-Initiative)
 
-This repo is part of my tutorial demonestrating how to implement the concept of 
-design patter for creation (clonning) of smart contracts using clone factory. 
-You can learn more about what design pattern is and the benefits of contract 
-factory design pattern in my blog.
+Caution! Copyright protected!
 
-This project is intended to be used as a learning reference for blockchain 
-developers followoing the tutorial in my blog (http://zillo.one/blog/go-fund-me), but 
-you should be able to follow it by yourself by reading the README and exploring its
-`contracts`, `tests`, `scripts` and 'config' files and directories.
+Copyright (c) 2022 CCC-Initiative
+
+This is an ongoing research project which will soon be added to MIT licence 
+category as a copy right free open source project. But untile then, beware
+that this project is copyright protected.
+
 
 ## Quick start
 
