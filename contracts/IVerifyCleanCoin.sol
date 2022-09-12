@@ -6,5 +6,5 @@ interface IVerifyCleanCoin {
         address _CCC_address,
         address _currentHolder,
         address _token
-    ) external;
+    ) external view returns (uint256);
 }
