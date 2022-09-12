@@ -12,7 +12,7 @@ or reach me out via info@zillo.one
 */
 
 //TODO: Create a repository for the details of marked tokens
-//TODO: create a function (Oracle gateway) to add merked tokens to the repository 
+//TODO: create a function (Oracle gateway) to add marked tokens to the repository
 //TODO: create a function to reverse the tokens to temporary vault & remove blocacklisted address
 //TODO: create a function to verify that a token is clean
 //TODO: create a function for initiating Tx by the governance contract
@@ -23,12 +23,27 @@ import "@openzeppelin/contracts/security/PullPayment.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 
 contract CoinVerifier is PullPayment {
-    string campainName;
-    address owner;
-    uint minimumDonation;
-    uint targetFund;
-    bool campainIsActive;
-    uint totalFund;
+    
+    struct StollenToken {
+        address token;
+        address tokenOwner;
+        uint tokenCount;
+        address prevSender;
+        uint256 transactionId;
+        bool isBaseHolder;
+    }
+
+    //stores list of blackListed addresses with details
+    mapping(address => StollenToken[]) public blackList;
+
+    //finction to add infected address to list of blackListed addresses
+    function addToBlackList(address _currentHolder, address _token, address _tokenOwner, uint tokenCount;
+        address prevSender;
+        uint256 transactionId;) public {
+        //TODO:
+        //require(address.isBaseHolder, "address must be a base address");
+        blackList[_currentHolder].push(_token, );
+    }
 
     address[] donators;
     mapping(address => uint) donations;
